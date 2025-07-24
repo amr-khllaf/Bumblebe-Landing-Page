@@ -64,6 +64,9 @@ header h1 {
   align-items: center;
   gap: 0.5rem;
 }
+.logo-image {
+  cursor: pointer;
+}
 .logo span {
   display: inline-block;
   font-size: 1.5rem;
@@ -318,6 +321,7 @@ main {
   position: absolute;
   top: 0;
   right: -20%;
+  cursor: grab;
 }
 
 /* Tablet Responsiveness */
