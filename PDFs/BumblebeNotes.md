@@ -1,11 +1,11 @@
 ---
 title: 3D Robot Website Using HTML & CSS and Spline Notes
-date: \today
+date: 24 - July - 2025
 ---
 
 # Nesting in SCSS (or Sass) Or CSS
 
-- Like SCSS, CSS also supports nesting, We CAn do this in css:
+- Like SCSS, CSS also supports nesting, We Can do this in css:
 
 - index.html File
 
