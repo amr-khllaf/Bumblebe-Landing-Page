@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bumblebee</title>
+        <link rel="shortcut icon" href="./images/robot.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- The gradient image  -->
+        <img class="image-gradient" src="./images/gradient.png" alt="gradient">
+        <!-- The layer blur effect -->
+        <div class="layer-blur"></div>
+        <!-- The Navbar Section -->
+        <div class="container">
+            <header>
+                <div class="logo-container">
+                    <h1 class="logo">
+                        <span data-aos="fade-right" data-aos-duration="1100">B</span>
+                        <span data-aos="fade-up" data-aos-duration="1100">u</span>
+                        <span data-aos="fade-up" data-aos-duration="1100">m</span>
+                        <span data-aos="fade-up" data-aos-duration="1100">b</span>
+                        <span data-aos="fade-down" data-aos-duration="1100">l</span>
+                        <span data-aos="fade-down" data-aos-duration="1100">e</span>
+                        <span data-aos="fade-down" data-aos-duration="1100">b</span>
+                        <span data-aos="fade-left" data-aos-duration="1100">e</span>
+                    </h1>
+                    <div class="logo-image">
+                        <img
+                            src="./images/output-onlinegiftools.gif"
+                            alt="robot"
+                            width="50"
+                            height="50"
+                        >
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li data-aos="fade-down" data-aos-duration="1500">
+                            <a href="#">Home</a>
+                        </li>
+                        <li data-aos="fade-down" data-aos-duration="1700">
+                            <a href="#">About</a>
+                        </li>
+                        <li data-aos="fade-down" data-aos-duration="1900">
+                            <a href="#">Services</a>
+                        </li>
+                        <li data-aos="fade-down" data-aos-duration="2100">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- The Main Content Section -->
+            <main>
+                <div class="content">
+                    <div
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="1500"
+                        class="tag-box"
+                    >
+                        <div class="tag">Introducing &wedbar;</div>
+                    </div>
+                    <h1
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="2000"
+                    >
+                        Email For
+                        <br>
+                        Developers
+                    </h1>
+                    <p
+                        class="description"
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="2500"
+                    >Stay updated with the latest news and offers.</p>
+                    <div
+                        class="buttons"
+                        data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0"
+                        data-aos-duration="3000"
+                    >
+                        <a href="#" class="btn-get-started">Documentation</a>
+                        <a href="#" class="btn-signing-main">Get Started</a>
+                    </div>
+                </div>
+            </main>
+            <spline-viewer
+                class="robot-3d"
+                url="https://prod.spline.design/CV8STXkT5-jmqY5w/scene.splinecode"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                data-aos-duration="3000"
+            ></spline-viewer>
+        </div>
+        <!-- The 3D Model JS Embedded Code -->
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.36/build/spline-viewer.js"></script>
+        <!-- The AOS Library JS Embedded Code -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+    AOS.init();
+        </script>
+        <!-- The Main JS File -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

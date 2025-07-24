@@ -1,0 +1,341 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  color: #e7e7e7;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Gradient And Layer Blur Effect */
+
+.image-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.layer-blur {
+  height: 0;
+  width: 30rem;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  box-shadow: 0 0 700px 15px white;
+  rotate: -30deg;
+  z-index: -1;
+}
+
+/* Navbar Section */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: linear-gradient(
+    to right,
+    #656565,
+    #7f42a7,
+    #6600c5,
+    #5300a0,
+    #757575,
+    #7a15a5
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: animationGradient 2.5s infinite linear;
+  -webkit-animation: animationGradient 2.5s infinite linear;
+}
+
+@keyframes animationGradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+.logo span:nth-child(1) {
+  animation-delay: 0s;
+}
+.logo span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.logo span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.logo span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.logo span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.logo span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.logo span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.logo span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  z-index: 999;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    /* Spacing between text and underline */
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #5300a0;
+      transition: width 0.3s ease-in-out;
+      -webkit-transition: width 0.3s ease-in-out;
+      -moz-transition: width 0.3s ease-in-out;
+      -ms-transition: width 0.3s ease-in-out;
+      -o-transition: width 0.3s ease-in-out;
+    }
+    /* Change color and underline on hover */
+    &:hover {
+      color: #a7a7a7;
+      /* Change background color on hover */
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* The Main Content Section */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center the content vertically */
+  min-height: calc(100vh - 6rem);
+}
+
+.content {
+  max-width: 40rem;
+  /* 10% = 4rem = 64px */
+  margin-left: 10%;
+  z-index: 999;
+}
+
+.tag-box {
+  position: relative;
+  width: 18rem;
+  height: 2.5rem;
+  /* margin-bottom: 2rem; */
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    #656565,
+    #7f42a7,
+    #6600c5,
+    #5300a0,
+    #757575,
+    #7a15a5
+  );
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  background-size: 200%;
+  animation: animationGradient 2.5s infinite linear;
+  -webkit-animation: animationGradient 2.5s infinite linear;
+}
+@keyframes animationGradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+.tag-box .tag {
+  position: absolute;
+  inset: 3px 3px 3px 3px;
+  background-color: black;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.tag-box .tag:hover {
+  color: #5300a0;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba(128, 128, 128, 0.428);
+}
+
+.description {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  max-width: 35rem;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.btn-get-started {
+  text-decoration: none;
+  border: 1px solid #2a2a2a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.btn-get-started:hover {
+  background-color: #1a1a1a;
+}
+
+.btn-signing-main {
+  text-decoration: none;
+  background-color: lightgray;
+  border: 1px solid #2a2a2a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-signing-main:hover {
+  background-color: gray;
+}
+
+/* The 3D Robot Model */
+
+.robot-3d {
+  position: absolute;
+  top: 0;
+  right: -20%;
+}
+
+/* Tablet Responsiveness */
+
+@media (max-width: 1300px) {
+  header {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    margin-top: 85%;
+  }
+  .robot-3d {
+    scale: 0.8;
+    top: -20%;
+    right: 2%;
+  }
+  .buttons {
+    margin-bottom: 2rem;
+  }
+}
